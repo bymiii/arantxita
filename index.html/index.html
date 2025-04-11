@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Regalo para Arantxita - Video</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Flores y decoraciones generales -->
+  <div id="decoraciones" class="decoraciones">🌷🎓🌸🎓🌷</div>
+
+  <!-- Mensaje que aparece poco a poco -->
+  <div id="mensaje" class="mensaje"></div>
+
+  <!-- Casilla para desbloquear con decoraciones de graduación -->
+  <div class="contenedor" style="display: none;">
+    <div class="decoracion-graduacion">
+      🎓📜🎓
+    </div>
+    <input type="text" id="clave" placeholder="Escribe la palabra mágica...">
+    <button onclick="verificar()">Desbloquear</button>
+    <p id="mensajeError"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

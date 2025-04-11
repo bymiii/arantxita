@@ -1,0 +1,90 @@
+body {
+  background-color: #ffe6f0;
+  color: #d63384;
+  font-family: 'Segoe Script', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+#decoraciones {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: aparecerDecoraciones 2s forwards;
+}
+
+@keyframes aparecerDecoraciones {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.mensaje {
+  font-size: 1.5rem;
+  color: #d63384;
+  margin-top: 20px;
+}
+
+.contenedor {
+  background-color: #fff0f5;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+}
+
+.decoracion-graduacion {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: aparecerDecoracionGraduacion 2s forwards;
+}
+
+@keyframes aparecerDecoracionGraduacion {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border: 2px solid #d63384;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #d63384;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #c12871;
+}
+
+#mensajeError {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
